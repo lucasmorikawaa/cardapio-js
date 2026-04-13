@@ -34,9 +34,9 @@
                     R$ 30,00
                     </div>
                     <div class="quantity">
-                        <button class="button-quantity">-</button>
-                        0
-                        <button class="button-quantity">+</button>
+                        <button class="button-quantity" onclick="removeQuantity(1)">-</button>
+                        <input type="number" id="1" data-id="1" value="0" min="0" class="qty" readonly>
+                        <button class="button-quantity" onclick="addQuantity(1)">+</button>
                     </div>
                 </div>
                 <div class="menu-cards">
@@ -46,9 +46,9 @@
                         R$ 25,00
                     </div>
                     <div class="quantity">
-                        <button class="button-quantity">-</button>
-                        0
-                        <button class="button-quantity">+</button>
+                        <button class="button-quantity" onclick="removeQuantity(2)">-</button>
+                        <input type="number" id="2" data-id="2" value="0" min="0" class="qty" readonly>
+                        <button class="button-quantity" onclick="addQuantity(2)">+</button>
                     </div>
                 </div>
                 <div class="menu-cards">
@@ -58,9 +58,9 @@
                         R$ 22,00
                     </div>
                     <div class="quantity">
-                        <button class="button-quantity">-</button>
-                        0
-                        <button class="button-quantity">+</button>
+                        <button class="button-quantity" onclick="removeQuantity(3)">-</button>
+                        <input type="number" id="3" data-id="3" value="0" min="0" class="qty" readonly>
+                        <button class="button-quantity" onclick="addQuantity(3)">+</button>
                     </div>
                 </div>
             </div>
@@ -77,38 +77,38 @@
             <div class="cards-section">
                 <div class="menu-cards">
                     <object data="assets/farofa.jpg" type="" class="cards-image"></object>
-                    Bife com batatas
+                    Farofa
                     <div class="price">
-                    R$ 30,00
+                    R$ 10,00
                     </div>
                     <div class="quantity">
-                        <button class="button-quantity">-</button>
-                        0
-                        <button class="button-quantity">+</button>
+                        <button class="button-quantity" onclick="removeQuantity(4)">-</button>
+                        <input type="number" id="4" value="0" min="0" class="qty" readonly>
+                        <button class="button-quantity" onclick="addQuantity(4)">+</button>
                     </div>
                 </div>
                 <div class="menu-cards">
                     <object data="assets/salad.jpg" type="" class="cards-image"></object>
-                    Coxa de Frango crocante
+                    Salada
                     <div class="price">
-                        R$ 25,00
+                        R$ 8,00
                     </div>
                     <div class="quantity">
-                        <button class="button-quantity">-</button>
-                        0
-                        <button class="button-quantity">+</button>
+                        <button class="button-quantity" onclick="removeQuantity(5)">-</button>
+                        <input type="number" id="5" value="0" min="0" class="qty" readonly>
+                        <button class="button-quantity" onclick="addQuantity(5)">+</button>
                     </div>
                 </div>
                 <div class="menu-cards">
                     <object data="assets/torresmo.jpg" type="" class="cards-image"></object>
-                    Carne de panela
+                    Torresmo
                     <div class="price">
-                        R$ 22,00
+                        R$ 12,00
                     </div>
                     <div class="quantity">
-                        <button class="button-quantity">-</button>
-                        0
-                        <button class="button-quantity">+</button>
+                        <button class="button-quantity" onclick="removeQuantity(6)">-</button>
+                        <input type="number" id="6" value="0" min="0" class="qty" readonly>
+                        <button class="button-quantity" onclick="addQuantity(6)">+</button>
                     </div>
                 </div>
             </div>  
@@ -122,10 +122,12 @@
             <input type="text" placeholder="Digite seu número" class="input-data">
             <input type="email" placeholder="Digite seu e-mail" class="input-data">
         </div>
-        <button class="button-calc">Calcular</button>
-        <div class="show-order">
+        <button class="button-calc" onclick="calcularTotal()">Calcular</button>
+        <div id="output" class="show-order">
 
         </div>
     </div>
+
+    <script src="javascript.js"></script>
 </body>
 </html>

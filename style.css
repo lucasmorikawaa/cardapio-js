@@ -19,7 +19,7 @@ body{
 }
 
 .header-image{
-    width: 1280px;
+    width: 90%;
     border-radius: 5px;
     margin: 16px;
     display: flex;
@@ -95,6 +95,7 @@ body{
     border-radius: 2px;
 }
 
+
 .button-quantity:hover{
     background-color: #bbb0b0;
 }
@@ -124,4 +125,5 @@ body{
     padding: 16px;
     border-radius: 5px;
     box-shadow: 0 0 8px #9e9c9c;
+    cursor: pointer;
 }
